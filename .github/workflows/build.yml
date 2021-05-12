@@ -41,7 +41,7 @@ jobs:
           path: dist
           retention-days: 7
       - name: Webhook
-        uses: distributhor/workflow-webhook@v1
+        uses: distributhor/workflow-webhook@v1.0.8
         env:
           webhook_url: "https://hasebetest.g.kuroco.app/direct/menu/github/"
           webhook_secret: "d981fb1acac77cf5430215377ce322ab"
@@ -72,7 +72,7 @@ jobs:
           path: dist
           retention-days: 7
       - name: Webhook
-        uses: distributhor/workflow-webhook@v1
+        uses: distributhor/workflow-webhook@v1.0.8
         env:
           webhook_url: "https://hasebetest.g.kuroco.app/direct/menu/github/"
           webhook_secret: "d981fb1acac77cf5430215377ce322ab"
