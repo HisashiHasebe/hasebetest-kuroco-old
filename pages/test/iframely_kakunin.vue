@@ -2,7 +2,7 @@
   <div v-if="response">
     <h1 class="title">{{ response.details.subject }}</h1>
     <!-- eslint-disable-next-line vue/no-v-html -->
-    <div class="post" v-html="response.details.ext_col_01"></div>
+    <div class="post" v-html="response.details.ext_col_04"></div>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
   async asyncData({ $axios, params }) {
     return {
       response: await $axios.$get(
-        `https://sample-support-kuroco.a.kuroco.app/rcms-api/26/test/253`
+        `/rcms-api/13/test2/1064`
       ),
     }
   },
