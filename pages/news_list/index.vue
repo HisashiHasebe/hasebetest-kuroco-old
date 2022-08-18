@@ -7,7 +7,6 @@
       </nuxt-link>
     </div>
 
-    <Pagenator v-bind="{ ...response.pageInfo }" />
   </div>
 </template>
 

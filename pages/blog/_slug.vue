@@ -19,7 +19,7 @@ export default {
   async asyncData({ $axios, params }) {
     try {
       const response = await $axios.$get(
-        '/rcms-api/1/blog/' + `${params.slug}`
+        process.env.BASE_URL + '/rcms-api/1/blog/' + `${params.slug}`
       )
       console.log(response)
       return { response }

@@ -27,7 +27,7 @@
 <script>
 async function getAllComments (topics_id) {
     const { list } = await this.$axios.$get(
-        '/rcms-api/21/comments',
+        process.env.BASE_URL + '/rcms-api/21/comments',
         {
             params: {
                 module_id: topics_id,
@@ -43,9 +43,9 @@ export default {
   middleware: 'auth',
   async asyncData ({ $axios, params }) {
     try {
-      const profile = await $axios.$get('/rcms-api/18/profile')
+      const profile = await $axios.$get(process.env.BASE_URL + '/rcms-api/18/profile')
       const response = await $axios.$get(
-        '/rcms-api/21/newsdetail/1047'
+        process.env.BASE_URL + '/rcms-api/21/newsdetail/1047'
       )
       return { profile, response, comments: await getAllComments.call({ $axios }, response.details.topics_id) }
     } catch (e) {
