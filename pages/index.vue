@@ -30,7 +30,7 @@
           <img :src="response.details.ext_col_01[0].url" class="bd-placeholder-img" width="100%" height="100%"><rect fill="#777" width="100%" height="100%"/>
           <div class="container">
             <div class="carousel-caption text-left">
-              <h1>【見出しの例】</h1>
+              <h1>見出しの例。</h1>
               <p>カルーセルの1番目のスライドの代表的なプレースホルダーコンテンツ。</p>
               <p><a class="btn btn-primary" href="#">本日登録</a></p>
             </div>
